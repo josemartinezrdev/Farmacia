@@ -1,0 +1,16 @@
+package com.farmacia.unidad_medida.application;
+
+import com.farmacia.unidad_medida.domain.entity.UnidadMedida;
+import com.farmacia.unidad_medida.domain.service.UnidadMedidaService;
+
+public class UpdateUnidadMedidaUseCase {
+    private UnidadMedidaService unidadMedidaService;
+
+    public UpdateUnidadMedidaUseCase(UnidadMedidaService unidadMedidaService) {
+        this.unidadMedidaService = unidadMedidaService;
+    }
+
+    public void execute(UnidadMedida unidadMedida) {
+        unidadMedidaService.updateUnidadMedida(unidadMedida);
+    }
+}
